@@ -1,8 +1,16 @@
-.btn {
+.btn-filled {
   border-radius: 20px;
   font-size: 1.2rem;
   color: white;
-  background: #016b6b;
+  background: #fc6011;
   border: none;
+  padding: 10px 20px;
+}
+.btn-border {
+  border-radius: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #fc6011;
+  color: #fc6011;
+  background: white;
   padding: 10px 20px;
 }
