@@ -13,3 +13,4 @@ export const germancard = () => german;
 export const italiancard = () => italian;
 export const asiancard = () => asian;
 export const containercards = () => cardsContainer;
+containercards.parameters = { layout: "fullscreen" };
