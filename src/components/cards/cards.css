@@ -16,3 +16,8 @@
   font-weight: 700;
   margin: 0;
 }
+.cards-container {
+  border: 1px solid black;
+  display: grid;
+  padding: 1rem;
+}
