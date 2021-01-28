@@ -9,8 +9,11 @@
 :root {
   --main-color: #fc6011;
   --primary-font-color: #4a4b4d;
+  --secondary-font-color: #7c7d7e;
   --placeholder-color: #b6b7b7;
   --input-background-color: #f2f2f2;
+  --facebook-btn-color: #367fc0;
+  --google-btn-color: #dd4b39;
   --primary-font: "Quicksand", sans-serif;
   /* --primary-font: "Times", serif; */
 
