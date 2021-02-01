@@ -1,6 +1,8 @@
 input {
   border: none;
   border-radius: 28px;
+  background-color: var(--input-background-color);
+  font-family: var(--primary-font);
   font-size: 0.8em;
   height: 56px;
   padding: 18px 0 18px 34px;
@@ -12,15 +14,13 @@ input:-webkit-autofill:hover {
   background-color: rgb(151, 222, 250);
 } */
 
-.input-email {
-  background-color: #f2f2f2;
-  color: #4a4b4d;
-}
+/* .input-email {
+} */
 .input-email::placeholder,
 .input-password::placeholder {
+  color: var(--placeholder-color);
   opacity: 0.7;
 }
 .input-password {
-  background-color: #f2f2f2;
   color: #4a4b4d;
 }

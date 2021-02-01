@@ -24,6 +24,7 @@
   border-radius: 20px;
 }
 .card-text {
+  color: var(--primary-font-color);
   text-align: center;
   font-size: 0.8em;
   font-weight: 700;

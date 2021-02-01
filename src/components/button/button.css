@@ -1,17 +1,19 @@
 .btn-filled {
   border-radius: 28px;
+  font-family: var(--primary-font);
   font-size: 1rem;
   color: white;
-  background: #fc6011;
+  background: var(--main-color);
   border: none;
   padding: 10px 20px;
   height: 56px;
 }
 .btn-border {
   border-radius: 28px;
+  font-family: var(--primary-font);
   font-size: 1rem;
-  border: 1px solid #fc6011;
-  color: #fc6011;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
   background: white;
   padding: 10px 20px;
   height: 56px;
