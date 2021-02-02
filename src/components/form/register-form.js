@@ -1,4 +1,4 @@
-xport function createRegisterForm() {
+export function createRegisterForm() {
   return `
       <form class="form">
         <h2>Reset Password</h2>
