@@ -19,8 +19,7 @@ export function createRegisterForm() {
   // input.placeholder = "TEXT HIER!";
 
   const button = document.createElement("button");
-
-  button.classList.add("btnRegister");
+  button.classList.add("btn");
   button.innerText = "Register";
 
   function register() {
