@@ -15,8 +15,23 @@
   height: 56px;
 }
 .form .input {
-  margin-top: 2em;
+  /* margin-top: 2em; */
 }
 
-.form .otpPass {
+.form__hint a {
+  margin-left: 0.5em;
+}
+
+.form__otp {
+  background: darkkhaki;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.form__otp input {
+  padding: 10px;
+  width: 2.8rem;
+  border-radius: 10px;
 }
