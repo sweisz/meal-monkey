@@ -23,7 +23,7 @@
 }
 
 .form__otp {
-  background: darkkhaki;
+  /* background: darkkhaki; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
