@@ -1,70 +1,68 @@
+import { createElement } from "../../utils/createElement";
+
+function createInputElement() {
+  return createElement("input", {
+    className: "input",
+    placeholder: "*",
+    type: "number",
+    maxlength: 1,
+    min: 0,
+    max: 9,
+  });
+}
+
 export function createVerifyForm() {
-  const form = document.createElement("form");
-  form.className = "form";
+  const inputElement1 = createInputElement();
+  const inputElement2 = createInputElement();
+  const inputElement3 = createInputElement();
+  const inputElement4 = createInputElement();
 
-  //   const input = document.createElement("input");
-  //   input.setAttribute("type", "password");
-  //   input.setAttribute("placeholder", "*");
+  const messageElement = createElement("p", {
+    className: "message",
+    innerText: " ",
+  });
 
-  const button = document.createElement("button");
-  button.innerText = "Register";
-  button.className = "btn";
-
-  function next() {
-    alert("NEXT");
-  }
-  button.addEventListener("click", next);
-
-  const title = document.createElement("h2");
-  title.innerText = "We have sent an OTP to your mobile.";
-
-  const infoText = document.createElement("p");
-  infoText.innerText =
-    "Please check your mobile number ... Continue to reset your password.";
-
-  // this Function creates a input
-  function createOTPInputElement() {
-    const input = document.createElement("input");
-    input.type = "password";
-    input.placeholder = "*";
-    input.className = "input";
-    return input;
-  }
-
-  // Create variables via function
-  const otpOne = createOTPInputElement();
-  const otpTwo = createOTPInputElement();
-  const otpThree = createOTPInputElement();
-  const otpFour = createOTPInputElement();
-
-  // Create the container DIV for OTP Password or PIN
-  const passwordContainer = document.createElement("div");
-  passwordContainer.className = "form__otp";
-  passwordContainer.append(otpOne, otpTwo, otpThree, otpFour);
-
-  form.append(title, passwordContainer, infoText);
-
-  // for (let i = 0; i < 4; i++) {
-  //   const input = document.createElement("input");
-  //   input.setAttribute("type", "password");
-  //   input.setAttribute("placeholder", "*");
-  //   input.classList.add("otpPass");
-  //   form.append(input);
-  // }
-
-  form.append(button);
-
-  // Hint +Link under the button
-  const hint = document.createElement("p");
-  hint.innerText = "Didn't Receive?";
-  hint.className = "form__hint";
-
-  const resendLink = document.createElement("a");
-  resendLink.innerText = "Click Here";
-  resendLink.href = "#";
-
-  form.append(hint);
-  hint.append(resendLink);
-
-  return form;
+  return createElement("form", {
+    className: "form",
+    children: [
+      createElement("h2", {
+        innerText: "We have sent an OTP to your Mobile",
+      }),
+      messageElement,
+      createElement("div", {
+        className: "form__otp",
+        children: [inputElement1, inputElement2, inputElement3, inputElement4],
+      }),
+      createElement("input", {
+        type: "submit",
+        innerText: "Next",
+        className: "btn",
+      }),
+      createElement("p", {
+        innerText: "Didn't Receive?",
+        className: "form__hint",
+        children: [
+          createElement("a", {
+            innerText: "Click here!",
+            href: "#",
+          }),
+        ],
+      }),
+    ],
+    onsubmit: function (event) {
+      event.preventDefault();
+      const password =
+        inputElement1.value +
+        inputElement2.value +
+        inputElement3.value +
+        inputElement4.value;
+      if (password === "1234") {
+        messageElement.innerText = "";
+        // alert("Welcome!");
+      } else {
+        // alert("You are not permitted!");
+        messageElement.innerText = "You are not permitted!";
+      }
+    },
+  });
 }
