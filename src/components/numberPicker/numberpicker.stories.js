@@ -1,9 +1,8 @@
-import "./numberpicker.css";
-import { numberPicker } from "./numberpicker";
+import { createPortionPicker } from "./portionpicker";
 
 export default {
-  title: "Components/numberpicker",
+  title: "Components/PortionPicker",
   parameters: { layout: "centered" },
 };
 
-export const numberpicker = () => numberPicker();
+export const portionPicker = () => createPortionPicker();
