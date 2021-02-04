@@ -23,7 +23,7 @@
 }
 
 .form__otp {
-  background: darkkhaki;
+  /* background: darkkhaki; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
@@ -34,4 +34,11 @@
   padding: 10px;
   width: 2.8rem;
   border-radius: 10px;
+}
+.message {
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  height: 2em;
 }

@@ -19,9 +19,7 @@
   --input-background-color: #f2f2f2;
   --facebook-btn-color: #367fc0;
   --google-btn-color: #dd4b39;
-  --primary-font: "Quicksand", sans-serif;
-  /* --primary-font: "Times", serif; */
-
+  --primary-font: "Metropolis", sans-serif;
   --color-secondary: rgb(96, 235, 15);
   --color-primary: #fc6011;
 }
@@ -41,7 +39,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--primary-font);
 }
 
 a,
