@@ -1,7 +1,6 @@
 import { createElement } from "../../utils/createElement";
 import numberPickerStories from "./numberPicker.stories";
 
-let counter = 0;
 
 const descriptionText = createElement( "Protion Picker" ) {
 } 
